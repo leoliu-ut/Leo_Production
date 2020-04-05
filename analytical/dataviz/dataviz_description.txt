@@ -1,0 +1,19 @@
+In this project, I visualized the cities with population over 100,000.
+I downloaded data from https://simplemaps.com/data/world-cities
+The original data contains every city's population in the world, but I think it's too much data to process.
+So I cleaned the data in Excel, and only kept those cities with over 100,000 population.
+
+This final project has three classes. 
+One is button class, which controls all the buttons, such as their position, size, text on it, and detection
+function whether the mouse is over the button or not; 
+Another classes are sliders, which user can use to rotate the Earth along with the longtitude and latitude either through dragging the slider
+or click on the bar directly. It also contains a reset function which can show the original position of the Earth.
+
+Main functions
+1 Drag the slider or click on the bar will rotate the earth
+2 Using "up" and "down" arrow on the keyboard to scale up/down the earth
+		
+Thanks to professor's suggestions, I added a "reset" function to the bar/slider class. And I also tried a different method to read the table
+as string.
+
+I also explored the 3D to 2D projection function, it's funny but pretty challenging to implement. I'll explore more on this function.

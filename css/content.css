@@ -1,0 +1,114 @@
+html{
+    background-color: black;
+}
+body{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    z-index: 3;
+}
+#one{
+    background-image: url("./../pics/contentbg1motiongraphic.png");
+    /*background-repeat: no-repeat;*/
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc{
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.desc p{
+    width:30%;
+    height:100%;
+    position: relative;
+    left:14%;
+    color:whitesmoke;
+}
+
+.desc h2{
+    width:30%;
+    height:100%;
+    position: relative;
+    left:14%;
+    text-align: center;
+    color:whitesmoke;
+}
+.demo{
+    width:36%;
+    height:36%;
+    position: relative;
+    right:6%;
+    top:16%;
+    z-index:1;
+}
+.playbutton{
+    width:6%;
+    height:6%;
+    position: relative;
+    right:26%;
+    padding-top: 7%;
+    top:26%;
+    z-index: 3;
+}
+
+#two{
+    background-image: url("./../pics/contentbg2vr.png");
+    /*background-repeat: no-repeat;*/
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#three{
+    background-image: url("./../pics/contentbg3musicvideo.png");
+    /*background-repeat: no-repeat;*/
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    margin-top: -1.6px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#four{
+    background-image: url("./../pics/contentbg4documentary.png");
+    /*background-repeat: no-repeat;*/
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    margin-top: -1.6px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar {
+    background-color: rgba(1,1,1,0.5) !important;
+}

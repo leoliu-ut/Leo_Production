@@ -1,0 +1,42 @@
+html {
+    position: relative;
+    /*padding: 36px;*/
+    align-content: center;
+    background-color: black;
+}
+
+body {
+    position: relative;
+}
+
+.contactinfo {
+    position: relative;
+    width: 46%;
+    height: 60%;
+}
+
+.background {
+    position: relative;
+    width: 46%;
+    height: 60%;
+    align-content: center;
+}
+
+img {
+    border: 16px transparent;
+    /*padding-right: 3%;*/
+
+}
+
+.about {
+    position: relative;
+    align-content: center;
+    width: 36%;
+    height: 30%;
+    /*padding-left: 16%;*/
+    padding-bottom: 6%;
+}
+
+div#description {
+    background-color: black;
+}
