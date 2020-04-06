@@ -1,4 +1,6 @@
 @font-face {
+    font-family: "Verdana";
+    src: url(fonts/verdana.ttf);
     font-family: "Ink Free";
     src: url(fonts/Inkfree.ttf);
 }
