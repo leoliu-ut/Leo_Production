@@ -42,8 +42,10 @@
         <div class="menu">
             <ul>
 
-                <li><a href="https://leoliu-ut.github.io/Leo_Production/portfolio/portfolioindex.html">Creative Works</a>
-                </li><li><a href="https://leoliu-ut.github.io/Leo_Production/analytical/analyticalindex.html">Analytical
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/portfolio/portfolioindex.html">Creative
+                    Works</a>
+                </li>
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/analytical/analyticalindex.html">Analytical
                     Works</a></li>
                 <li><a href="https://leoliu-ut.github.io/Leo_Production/contact.html">Contact</a></li>
 
@@ -98,170 +100,25 @@
     <ul class="row grid cs-style-2">
 
         <div class="inner clearfix">
-            <h3>AI Facial Recognition Model</h3>
+            <h3>Econometric Analysis Paper <br> Film Rating v.s. Box Office Gross</h3>
         </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/1.png" alt="how are you feeling poster"></li>
-        </ul>
-        <div class="inner clearfix">
-            <p style="font-size: 16px">
-                <u><b><em>Problem</em></b></u>: Most of us take identifying emotions and emotional intelligence for
-                granted. It feels natural and it is considered a basic human social skill. However, not everyone can do
-                this easily! 1 in 10 people fall on the spectrum and have difficulty identifying and describing
-                emotions. We built a model
-                based on thousands of photos containing people’s faces. It can recognize
-                human emotions from the pictures. This could facilitate people communication better due to the fact that
-                55% of communication is based on body language including facial features.
-            </p>
-        </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/2.png" alt="how are you feeling data">
-            </li>
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/3.png" alt="how are you feeling waht we did">
 
-            </li>
-        </ul>
+        <img src="pics/econ/1.png" alt="econ poster1"></li>
+
+        <img src="pics/econ/2.png" alt="econ poster2"></li>
 
         <div class="inner clearfix">
             <p style="font-size: 16px">
-                <u><b><em>Datasets</em></b></u>
-                : <br><u>The Japanese Female Facial Expression (JAFFE) Database. </u><br>
-                <small>This database contains a total of 213 gray-scaled images of 10 different Japanese woman.
-                    Each woman has a picture of a facial expression for a total of 7 different facial expressions:
-                    happy,
-                    neutral, sad, surprise, anger, disgust, and fear. 60 different people rated each photo on a scale of
-                    1-5
-                    (1 = low noticeability 5 = high noticeability) for each of the 6 emotions. The average rates per
-                    emotion
-                    per photo are given in the experiment’s dataset along with the images.
-                    (http://www.kasrl.org/jaffe.html)
-                </small>
-                <br>
-                <br>
-                <u>Specs on Faces (SoF) Dataset.</u><br>
-                <small>A collection of 42,592 (2,662×16) images for 112 persons (66 males and 46 females) who wear
-                    glasses under different illumination conditions. The dataset is FREE for reasonable academic fair
-                    use. The dataset presents a new challenge regarding face detection and recognition.
-                </small>
-
-            </p>
+                PDF version is attached <a href="pics/econ/Liu_econ_paper.pdf"> here</a>.</p>
         </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/6.png" alt="how are you feeling dataset">
-            </li>
-        </ul>
-
-        <div class="inner clearfix">
-            <p style="font-size: 16px">
-                <u><b><em>Approcah</em></b></u>:
-                <br>
-                <i>Challenges</i>:<br>
-                Inconsistency.
-                <small> In the JAFFE Dataset, the image order was inconsistent with the order in the directory
-                    which caused problems with matching the right emotion label with the right image.<br></small>
-
-                Different ratings.
-                <small>In the JAFFE Dataset, all of the images were named slightly different in the
-                    ratings text file than in the directory.<br></small>
-                Conversion.
-                <small>For the SoF Dataset, the emotion labels were in a Matlab file so we had to download
-                    Matlab and figure out how to extract information from a Structure Array and save it into a CSV file
-                    Data cleaning.
-                    <br><br></small>
-                <i> Transforming</i>:<br>
-                <small>Darwin does not support convolutional neural networks. Our first approach involved us obtaining
-                    grayscale color values for every pixel of each image
-                    This method FAILED. <br>
-                    Then, we researched and found a facial recognition package that we could install.
-                    The package was able to take in the images and export 72 points per image of the face’s main
-                    landmarks.
-                    Which include the chin, eyebrows, nose, eyes, and lips.
-                </small>
-                <br>
-                <strong>2556 </strong> comparisons <strong> 10244 </strong>features generated!
-
-
-            </p>
-        </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/5.png" alt="how are you feeling approach and setup">
-            </li>
-        </ul>
-
-        <div class="inner clearfix">
-            <p style="font-size: 16px">
-                <u><b><em>Feature generation</em></b></u>: We attempted several different versions of feature generation
-                and learned that including all feature
-                types does not make the model better
-                Here, you can see that for our original model, we included all Feature Types. Euclidean distance, x
-                distance, y distance, and the angle.
-            </p>
-        </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/7.png" alt="how are you feeling feature generation">
-            </li>
-        </ul>
-        <div class="inner clearfix">
-            <p style="font-size: 16px">
-                <u><b><em>What we learned</em></b></u>:
-                XGBoost classifier model is the best.
-                Most important features always came from the top and bottom lip with the Y-distance as the most
-                important feature type. Meaning the model heavily relies on how far apart the top lip is from the bottom
-                lip.
-
-            </p>
-        </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/8.png" alt="how are you feeling learning">
-            </li>
-        </ul>
-        <div class="inner clearfix">
-            <p style="font-size: 16px">
-                <u><b><em>Demo</em></b></u>: Our model successfully recognizes facial expressions of teammates.
-            </p>
-        </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/9.png" alt="how are you feeling demo">
-            </li>
-        </ul>
-
-        <div class="inner clearfix">
-            <p style="font-size: 16px">
-                <u><b><em>Next steps</em></b></u>: <br>Expand our dataset and explore more. <br>
-                Analyze the percentages of each emotion instead of focusing on the most significant one. Most likely,
-                our facial expression can show a combination of several emotions, such as happy and surprised, fearful
-                but angry. So we believe it could be better to analyze the percentage of each emotion, to get a more
-                accurate result.<br>
-                Extend our analysis to include voice and body languages. Many people try to control their emotions. If
-                we can combine the facial expression, voice, and body language together, we can analyze emotional status
-                more accurately. </p>
-        </div>
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/11.png" alt="how are you feeling next steps">
-            </li>
-        </ul>
-
-        <ul class="row grid cs-style-2">
-            <li class="col-md-6 post">
-                <img src="pics/how_ru_feeling/12.png" alt="how are you feeling conclusion">
-            </li>
-        </ul>
         <!--GO BACK-->
         <div class="col-md-6" style="float: right">
             <a href="analyticalindex.html"> <input type="submit" class="form-control" value="Go Back"></a>
             &nbsp;&nbsp;&nbsp;&nbsp;
         </div>
+    </ul>
 </div>
-</div>
+
 <!-- / Site Main -->
 
 
