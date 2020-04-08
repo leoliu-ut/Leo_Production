@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <title>Analytics | Leo Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+    <!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6696d2b997.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body class="home">
+
+
+<!-- / Site Header -->
+<div class="site-header">
+
+    <!-- / Site Logo -->
+    <div class="site-logo">
+
+        <a href="https://leoliu-ut.github.io/Leo_Production/index.html"> <img src="pics/logo.png"
+                                                                              style="width: 38%"/></a>
+
+    </div>
+    <!-- \ Site Logo -->
+
+
+    <!-- / Site Menu -->
+    <div class="site-menu">
+        <div class="icon"></div>
+        <div class="menu">
+            <ul>
+
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/portfolio/portfolioindex.html">Creative
+                    Works</a>
+                </li>
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/analytical/analyticalindex.html">Analytical
+                    Works</a></li>
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- \ Site Menu -->
+
+
+    <!-- / Site Description -->
+    <h1>
+
+        A creative, passionate
+        <br>and motivated film enthusiast, <br>combined with a data aficionado.
+        <br><br>
+        I’m currently <br> mixing up my passion <br>for creative production <br>with my love of data analytics,
+        <br> and applying it to marketing.
+
+    </h1>
+
+    <!-- \ Site Description -->
+
+
+    <!-- / Site Footer -->
+    <div class="site-footer">
+
+        <div class="site-social">
+            <ul style="padding-left: 0px;">
+                <li><a href="https://vimeo.com/leozliu"> <i class="fab fa-vimeo" style="color: #86C9EF"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/leozliu"> <i class="fab fa-linkedin"
+                                                                      STYLE="color: #1da1f2"></i></a></li>
+                <li><a href="https://www.instagram.com/leozliu/"><i class="fab fa-instagram" style=" color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    /*background-clip: text;*/
+    -webkit-background-clip: text;"></i></a></li>
+            </ul>
+            <br>
+        </div>
+        <p>© 2020 Leo Z. Liu <br>
+            All rights reserved</p>
+
+    </div>
+    <!-- \ Site Footer -->
+
+</div>
+<!-- \ Site Header -->
+
+
+<!-- \ Site Main -->
+<div class="site-main">
+    <ul class="row grid cs-style-2">
+
+        <div class="inner clearfix">
+            <h3>Database Application</h3>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/1.png" alt="cancer database poster">
+        </ul>
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>Areas of Interests</em></b></u>: We examined a lot of areas about cancer. We found three most
+                intriguing ones - the relationship between cancer rate and age group,
+                region and insurance status.
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/2.png" alt="how are you feeling data">
+
+
+        </ul>
+
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>Datasets</em></b></u>
+                : <br><u>Population Information dataset.</u>* <br>
+                The National Health Interview Survey dataset contains answers from an annual (year of 2012)
+                cross-sectional
+                survey designed by the National Center for Health Statistics (NCHS) and administered by the U.S.
+                Census Bureau. These surveys track health status, health
+                care access, and progress toward achieving national health objectives. The three survey information
+                files are about the overall families’, individual adults’, and individual childrens’ health.
+                The data explores the health and well-being of families in much detail; there are hundreds of unique
+                attributes.
+                From analyzing this data, we hope to gain insights on how individual adults’ lifestyles affect the
+                well-being and health of the children in their families.
+
+                <br>
+                <br>
+                <u>Cancer Stats dataset.</u>*<br>
+                The United States Cancer Statistics (USCS) explores cancer details grouped by cancer by area,
+                cancer by age, and cancer by site. The information is age-adjusted and have crude rate estimations.
+                The information is age-adjusted because the occurence of many cancers increase with age and death by
+                cancer chances increase with age. This way, the comapring areas with different population age
+                distribution is more accurate.
+                From analyzing this data, we hope to gain insights on cancer rates based on are, age, and site.
+
+
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+            <img src="pics/database/3.png" alt="cancer dataset">
+
+        </ul>
+
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>Approach</em></b></u>:
+                <br>
+                <i>Data Modeling</i>:<br> Through our SQL transforms, we made many of our modeled tables and had to
+                perform a cast as string on our age field because it contained age ranges as well as singular age
+                numbers.
+                <br><i>SQL </i>:<br> We practiced more than 100 SQL queries.
+                <br><i>Dataflow Programming</i>: <br>Through PTransforms, we cast age into age groups, sorted race groups,
+                and
+                cast states into regions. <br>Two datasets we found have different measure to record age. The population
+                dataset contains sepefic years, while the cancer stats one only contains age groups. Also, we fixed some
+                issues
+                with question marks, such as "9-5?" and sorted them in order.
+                In the population dataset, Asians are lists as their nationalities such as Chinese, Indian etc, while
+                in the cancer stats one, all Asians are in the same group. Similarly, population dataset contains all
+                specific info about each entry's state origin, while the cancer stats one only contains region such as
+                West, South, Midwest and Northeast.
+
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/4.png" alt="cancer approach and setup">
+
+        </ul>
+
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>What we learned</em></b></u>: <br>
+                <i><b>1. The relationship between cancer rate and insurance status </b></i><br>
+                We find out that the majority of population diagnosed with cancer have insurance covered. This is an
+                exciting news!
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/5.png" alt="cancer learning 1">
+
+        </ul>
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>What we learned</em></b></u>: <br>
+                <i><b>2. The relationship between cancer rate and region </b></i><br>
+                We find out that people in Midwest are more likely to be diagnosed with cancer at a rate of 0.37. The
+                rate for Northeast is 0.34, South is 0.30, and West is 0.29.
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/6.png" alt="cancer learning 3">
+
+        </ul>
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>What we learned</em></b></u>: <br>
+                <i><b>3. The relationship between cancer rate and age</b></i><br>
+                We find out that the majority of population diagnosed with cancer are elder citizens, which echoes with
+                our common sense. 1.79% of people aged 85+ are likely to have cancer, while less than 0.05% for other
+                age groups.
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/7.png" alt="cancer learning 3">
+
+        </ul>
+
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>Airflow DAG/Workflow</em></b></u>:
+                <br>
+
+            </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/8.png" alt="cancer Airflow DAG">
+
+        </ul>
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <u><b><em>Next steps</em></b></u>: <br>Expand our dataset and explore more. <br>
+                Analyze each cancer site and find more interesting relations.
+                <br>
+                Union our cancer table together. This could save us a lot of time instead of simply using join
+                function. A good lesson to learn! </p>
+        </div>
+        <ul class="row grid cs-style-2">
+
+            <img src="pics/database/9.png" alt="cancer next steps">
+
+        </ul>
+
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                <b><em>*</em></b> <br>
+                https://public.enigma.com/datasets/national-health-interview-survey-families-2012/3b7f4ae6-eb14-43d0-b4e0-1799b9ef8b92<br>
+                https://public.enigma.com/datasets/national-health-interview-survey-sample-adults-2012/841d4a2d-6903-4ef0-8dd0-a03e03574064<br>
+                https://public.enigma.com/datasets/national-health-interview-survey-sample-children-2012/5effeb26-3820-4700-9b4c-70a6c2e9b494)
+                <br> <br><b><em>**</em></b> <br>
+                We performed SQL, Airflow DAG, Apache Beam and all other functions on <a
+                    href="https://cloud.google.com/">
+                Google Cloud Platform </a>.
+            </p>
+
+        </div>
+        <!--GO BACK-->
+        <div class="col-md-6" style="float: right">
+            <a href="analyticalindex.html"> <input type="submit" class="form-control" value="Go Back"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+</div>
+</div>
+<!-- / Site Main -->
+
+
+<!-- / JS Files  -->
+
+<!-- jQuery -->
+<script src="js/jQuery/jquery-2.1.1.js"></script>
+
+<!-- Theme Functions -->
+<script src="js/functions.js"></script>
+
+
+</body>
+</html>
+

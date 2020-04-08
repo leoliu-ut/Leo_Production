@@ -11,9 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6696d2b997.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="processing.js"></script>
 
 </head>
 
@@ -40,8 +42,10 @@
         <div class="menu">
             <ul>
 
-                <li><a href="https://leoliu-ut.github.io/Leo_Production/portfolio/portfolioindex.html">Creative Works</a>
-                </li> <li><a href="https://leoliu-ut.github.io/Leo_Production/analytical/analyticalindex.html">Analytical
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/portfolio/portfolioindex.html">Creative
+                    Works</a>
+                </li>
+                <li><a href="https://leoliu-ut.github.io/Leo_Production/analytical/analyticalindex.html">Analytical
                     Works</a></li>
                 <li><a href="https://leoliu-ut.github.io/Leo_Production/contact.html">Contact</a></li>
 
@@ -95,56 +99,30 @@
 <div class="site-main">
     <ul class="row grid cs-style-2">
 
-        <!--database app-->
-        <li class="col-md-6 post">
-            <div class="poster">
-                <a href="analytical-database.html"> <img src="pics/coverpage_database.png"
-                                                         alt="database application poster" class="posterimg">
-                    <div class="postertag">
-                        <div class="posterintro">Database Application - Cancer Rate
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </li>
+        <div class="inner clearfix">
+            <h3>Data Visualization</h3>
+        </div>
 
-        <!--ai facial recognition model-->
-        <li class="col-md-6 post">
-            <div class="poster">
-                <a href="analytical-AI.html">
-                    <img src="pics/coverpage_hruf.png" alt="facial recognition model poster" class="posterimg">
-                    <div class="postertagleft">
-                        <div class="posterintro">AI Facial Recognition Model</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-        <!--econ paper-->
-        <li class="col-md-6 post">
-            <div class="poster">
-                <a href="analytical-EconPaper.html"> <img src="./pics/coverpage_ecopaper.png" alt="econ paper poster" class="posterimg">
-                    <div class="postertag">
-                        <div class="posterintro">Econometric Analysis Paper <br> Film Rating v.s. Box Office Gross
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </li>
-        <!--data viz-->
-        <li class="col-md-6 post">
-            <div class="poster">
-                <a href="analytical-DataViz.html"> <img src="pics/coverpage_dataviz.png" alt="data viz poster" class="posterimg">
-                    <div class="postertagleft">
-                        <div class="posterintro">Data Visualization <br> Cities with over 1M population</div>
-                    </div>
-                </a>
-            </div>
-        </li>
+        <div class="inner clearfix">
+            <p style="font-size: 16px">
+                Empowered by Processing, I created this data visualization app to show the cities with population over
+                100,000 in the world. The data comes from https://simplemaps.com/data/world-cities (extracted in 2019).
+                I'm working to embed this app to this webpage. Below is a demo.
+            </p>
 
+            <video width=86% controls>
+                <source src="./dataviz/dataviz_demo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!--GO BACK-->
+        <div class="col-md-6" style="float: right">
+            <a href="analyticalindex.html"> <input type="submit" class="form-control" value="Go Back"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
     </ul>
-
-
 </div>
+
 <!-- / Site Main -->
 
 
