@@ -9,6 +9,7 @@
     src: url(verdana.ttf);
 }
 
+
 /* [[[ Globals ]]] */
 html {
     background-color: black;
@@ -31,13 +32,15 @@ li {
 }
 
 a {
-    color: #666;
+    color: #999999;
 }
 
 a:hover {
-    color: #111;
+    color: #6a6a6a;
     text-decoration: none;
+    transform: scale(3);
 }
+
 
 input, textarea {
     padding: 9px 12px;
@@ -142,6 +145,7 @@ input, textarea {
 .site-menu .icon:hover {
     opacity: 0.4;
     filter: alpha(opacity=40);
+
 }
 
 .site-menu .icon.opened {
